@@ -1,0 +1,86 @@
+body{
+    background: rgb(0, 0, 0);
+    /*font: normal 15pt Arial;*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+/**/
+header {
+    display: flex;
+    justify-content: center;
+    
+}
+header div#logo{
+    width: 200px;
+    margin-left: -100px;
+    margin-right: 100px;
+
+}
+header img{
+    width: 20px;
+    height: 20px;
+    
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 800px;
+}
+li {
+    width: 150px;
+}
+li a {
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;/*retira sublinhado do texto*/
+    margin: 15px;
+}
+li div{
+    display: flex;
+    justify-content: center;
+}
+/**/
+section{
+    display: flex;
+    justify-content: center;
+}
+aside{
+    width: 20%;
+    height: 75vh;
+    margin-left: 5px;
+}
+div.menu{
+    margin-left: 0px;
+    list-style-type: none;
+}
+div.menu img{
+    width: 20px;
+    height: 20px;
+}
+div.menu a{
+    width: 150px;
+    display: flex;
+    justify-content: left;
+}
+main{
+    width: 80%;
+    height: 75vh;
+    margin-left: 10px;
+    background-color: #A52A2A;
+
+}
+footer{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
