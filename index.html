@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MONTTECH</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="src/app.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div id="logo">
-            <h1>MONTTECH</h1>
+            <a href=""><h1>MONTTECH</h1></a>
         </div>
         <div>
             <nav>
@@ -33,34 +35,52 @@
               </nav>
         </div>
     </header>
-    <section>
+    <section id="app">
         <aside>
-            <h2>Menu</h2>
+            <div class="menu">
+                <h3>HARDWARE</h3>
+                <li class="menu"><a onclick="computador()"><img src="img/logo.png" alt="">&nbsp;Computador</a></li>
+                <li class="menu"><a onclick="processador()"><img src="img/logo.png" alt="">&nbsp;Processador</a></li>
+                <li class="menu"><a onclick="placa()"><img src="img/logo.png" alt="">&nbsp;Placa de vídeo</a></li>
+                <li class="menu"><a onclick="ram()"><img src="img/logo.png" alt="">&nbsp;Memória RAM</a></li>
+            </div>
+            <!--h2>Menu</h2-->
+            </br>
+            </br>
             <div>
-                <div>
-                    <form action="" method="post">
-                        <input type="text" name="pesq" id="pesq" placeholder="Pesquisar" >
+                <div id="app">
+                    <form id="app-form">
+                        <input type="text" v-model="input_hard" placeholder="Pesquisar por hardware">
+                        <input type="submit" value="Pesquisar" v-on:click="submitForm">
                     </form>
                 </div>
             </div>
-            <div class="menu">
-                <h3>HARDWARE</h3>
-                <li class="menu"><a href=""><img src="img/logo.png" alt="">&nbsp;PC</a></li>
-                <li class="menu"><a href=""><img src="img/logo.png" alt="">&nbsp;Processador</a></li>
-                <li class="menu"><a href=""><img src="img/logo.png" alt="">&nbsp;Placa de vídeo</a></li>
-                <li class="menu"><a href=""><img src="img/logo.png" alt="">&nbsp;Memória RAM</a></li>
-            </div>
         </aside>
         <main>
-            <div>
-                <h2>Produtos</h2>
+            <div id="msg-erro">
+                <p>{{ produto }}</p>
             </div>
-    
+            <div id="foto-produto">
+
+                <div id="foto1" class="foto">
+                    <img src="img/mostruario/m_01.jpg" alt="produtos-1">
+                </div>
+                <div id="foto2" class="foto">
+                    <img src="img/mostruario/m_02.jpg" alt="produtos-2">
+                </div>
+                <div id="foto3" class="foto">
+                    <img src="img/mostruario/m_03.jpg" alt="produtos-3">
+                </div>
+                <div id="foto4" class="foto">
+                    <img src="img/mostruario/m_04.jpg" alt="produtos-4">
+                </div>
+                
+            </div>
         </main>
     </section>
     <footer>
         <p>Copyright &copy; 2023 MONTTECH | Developed by Monttech</p>
     </footer>
-    <script src="script.js"></script>
+    <!--script src="script.js"></script-->
 </body>
 </html>

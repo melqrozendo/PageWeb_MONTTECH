@@ -16,6 +16,11 @@ header div#logo{
     margin-right: 100px;
 
 }
+header div#logo a{
+    color: white;
+    text-decoration: none;/*retira sublinhado do texto*/
+
+}
 header img{
     width: 20px;
     height: 20px;
@@ -79,6 +84,26 @@ main{
     background-color: #A52A2A;
 
 }
+/**/
+div#msg-erro{
+    display: flex;
+    justify-content: center;
+}
+div#foto-produto{
+    display: flex;
+    justify-content: center;
+}
+.foto{
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+}
+.foto img{
+    width: 200px;
+    height: 200px;
+}
+
+/**/
 footer{
     text-align: center;
     font-size: 12px;
