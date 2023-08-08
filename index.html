@@ -37,43 +37,74 @@
     </header>
     <section id="app">
         <aside>
+            <div>
+                <div id="app">
+                    <form id="app-form">
+                        <input id="text" type="text" v-model="input_hard" placeholder="Pesquisar por hardware">
+                        <input id="btn" type="submit" value="OK" v-on:click="submitForm">
+                    </form>
+                    <div id="msg-erro">
+                        <p>{{ produto }}</p>
+                    </div>
+                </div>
+            </div>
             <div class="menu">
                 <h3>HARDWARE</h3>
-                
-                <li class="menu"><a href="javascript: computador();"><img src="img/logo.png" alt="">&nbsp;Computador</a></li>
-                <li class="menu"><a href="javascript: processador();"><img src="img/logo.png" alt="">&nbsp;Processador</a></li>
-                <li class="menu"><a href="javascript: placa();"><img src="img/logo.png" alt="">&nbsp;Placa de vídeo</a></li>
-                <li class="menu"><a href="javascript: ram();"><img src="img/logo.png" alt="">&nbsp;Memória RAM</a></li>
+                <ul id="menu">
+                    <li class="menu"><a href="javascript: computador();"><img src="img/logo.png" alt="">&nbsp;Computador</a></li>
+                    <li class="menu"><a href="javascript: processador();"><img src="img/logo.png" alt="">&nbsp;Processador</a></li>
+                    <li class="menu"><a href="javascript: placa();"><img src="img/logo.png" alt="">&nbsp;Placa de vídeo</a></li>
+                    <li class="menu"><a href="javascript: ram();"><img src="img/logo.png" alt="">&nbsp;Memória RAM</a></li>
+                </ul>
             </div>
             <!--h2>Menu</h2-->
             </br>
             </br>
-            <div>
+            <!-- <div>
                 <div id="app">
                     <form id="app-form">
-                        <input type="text" v-model="input_hard" placeholder="Pesquisar por hardware">
-                        <input type="submit" value="Pesquisar" v-on:click="submitForm">
+                        <input id="text" type="text" v-model="input_hard" placeholder="Pesquisar por hardware">
+                        <input type="submit" value="OK" v-on:click="submitForm">
                     </form>
+                    <div id="msg-erro">
+                        <p>{{ produto }}</p>
+                    </div>
                 </div>
-            </div>
+            </div> -->
         </aside>
         <main>
-            <div id="msg-erro">
+            <!-- <div id="msg-erro">
                 <p>{{ produto }}</p>
-            </div>
+            </div> -->
             <div id="foto-produto">
 
                 <div id="foto1" class="foto">
                     <img src="img/mostruario/m_01.jpg" alt="produtos-1">
+                    <div id="preco1" class="preco">
+                        <p id="descricao1">Cadeira Gamer</p>
+                        <p>R$ 1.000,00</p>
+                    </div>
                 </div>
                 <div id="foto2" class="foto">
                     <img src="img/mostruario/m_02.jpg" alt="produtos-2">
+                    <div id="preco2" class="preco">
+                        <p>Head-Phone</p>
+                        <p>R$ 1.000,00</p>
+                    </div>
                 </div>
                 <div id="foto3" class="foto">
                     <img src="img/mostruario/m_03.jpg" alt="produtos-3">
+                    <div id="preco3" class="preco">
+                        <p id="descricao3">Memória-RAM</p>
+                        <p id="preco3">R$ 1.000,00</p>
+                    </div>
                 </div>
                 <div id="foto4" class="foto">
                     <img src="img/mostruario/m_04.jpg" alt="produtos-4">
+                    <div id="preco4" class="preco">
+                        <p id="descricao4">Monitor</p>
+                        <p id="preco4">R$ 1.000,00</p>
+                    </div>
                 </div>
                 
             </div>

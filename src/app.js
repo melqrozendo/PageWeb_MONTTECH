@@ -80,6 +80,7 @@ function computador(){
     foto2.innerHTML = '<img src="img/pc/pc_02.jpg">';
     foto3.innerHTML = '<img src="img/pc/pc_03.jpg">';
     foto4.innerHTML = '<img src="img/pc/pc_04.jpg">';
+
 }
 
 function processador(){
@@ -102,3 +103,4 @@ function ram(){
     foto3.innerHTML = '<img src="img/ram/ram_03.jpg">';
     foto4.innerHTML = '<img src="img/ram/ram_04.jpg">';
 }
+
